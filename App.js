@@ -3,6 +3,8 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Appearance, useColorScheme } from 'react-native'
 
+import { NavigationContainer } from '@react-navigation/native';
+
 export default function App() {
     let colorScheme = useColorScheme()
 
@@ -15,10 +17,12 @@ export default function App() {
 
 function Theme(theme) {
   return(
-    <View style={theme.container}>
-      <Text style={theme.title}>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <View style={theme.container}>
+        <Text style={theme.title}>Open up App.js to start working on your app!</Text>
+        <StatusBar style="auto" />
+      </View>
+    </NavigationContainer>
   )
 }
 
@@ -38,11 +42,11 @@ const lightMode = StyleSheet.create({
 const darkMode = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#41007f',
+    backgroundColor: '#20003f',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    color: '#c07fff'
+    color: '#dfbfff'
   }
 })
