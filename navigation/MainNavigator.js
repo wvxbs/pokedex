@@ -17,7 +17,10 @@ const StackNavigator= () => {
             <Stack.Screen 
                 name = "Favorites" component={Favorites} 
                 options={{
-                    title: 'Favoritos'
+                    title: 'Favoritos',
+                    headerLargeStyle : {
+                        headerLargeTitle: true
+                    }
                 }}
             />
         </Stack.Navigator>

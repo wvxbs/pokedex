@@ -1,12 +1,12 @@
-import { Text, View, Button, useColorScheme } from "react-native"
+import { Text, View, Button, useColorScheme, ScrollView } from "react-native"
 import ColorScheme from "../utils/ColorScheme"
-
+import { StatusBar } from "expo-status-bar"
 
 const Favorites = ({navigation}) => {
     const colorScheme = ColorScheme(useColorScheme())
 
     return(
-        <View style={colorScheme.container}>
+        <ScrollView style={colorScheme.body}>
             <Text style={colorScheme.title}>
                 Favoritos
             </Text>
@@ -14,7 +14,7 @@ const Favorites = ({navigation}) => {
                 onPress={() => navigation.navigate('Home')} 
                 title="home"
             />
-        </View>
+        </ScrollView>
     )
 
 }

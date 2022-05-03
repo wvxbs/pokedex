@@ -1,9 +1,11 @@
 import {StyleSheet} from 'react-native'
 
 const LightMode = StyleSheet.create({
+    body: {
+      backgroundColor: '#fff'
+    },
     container: {
       flex: 1,
-      backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
     },
