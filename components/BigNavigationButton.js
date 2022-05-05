@@ -1,18 +1,12 @@
 import React from 'react'
 import {View, Text, Button} from 'react-native'
-import ColorScheme from '../utils/ColorScheme';
+import BaseStyle from '../styles/BaseStyle'
 
-const BigNavigationButton = ({navigation}) => {
-    const colorScheme = ColorScheme(useColorScheme())
-
+const BigNavigationButton = (props,{navigation}) => {
     return (
-        <View style={colorScheme.body}>
-            <Text style={colorScheme.title}>
-                Home
-            </Text>
+        <View style={BaseStyle.BigNavigationButton}>
             <Button 
-                onPress={() => navigation.navigate('Favorites')} 
-                title="favoritos"
+                title={props.text}
             />
         </View>
     )

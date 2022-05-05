@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native"
 
 const BaseStyle = StyleSheet.create({
-    body: {
+    BigNavigationButton: {
       backgroundColor: '#20003f',
     }
   })

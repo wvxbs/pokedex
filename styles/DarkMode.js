@@ -1,8 +1,9 @@
  import { StyleSheet } from "react-native"
 
-const DarkMode = StyleSheet.create({
+const DarkMode = StyleSheet.create(
+  {
     body: {
-      backgroundColor: '#20003f',
+      backgroundColor: "#20003f",
     },
     container: {
       flex: 1,
@@ -10,6 +11,8 @@ const DarkMode = StyleSheet.create({
       justifyContent: 'center',
     },
     title: {
+      fontWeight : 'bold',
+      fontSize: 30,
       color: '#dfbfff'
     }
   })

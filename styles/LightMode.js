@@ -10,6 +10,8 @@ const LightMode = StyleSheet.create({
       justifyContent: 'center',
     },
     title: {
+      fontWeight : 'bold',
+      fontSize: 30,
       color: '#41007f'
     }
   })

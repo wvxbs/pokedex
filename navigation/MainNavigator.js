@@ -10,17 +10,36 @@ const StackNavigator= () => {
         <Stack.Navigator>
             <Stack.Screen 
                 name = "Home" component={Home} 
-                options={{
-                    title: 'Pokedex'
+                screenOptions={{
+                    // headerStyle: {
+                    //   backgroundColor: '#f4511e',
+                    // },
+                    // headerTintColor: '#fff',
+                    // headerTitleStyle: {
+                    //   fontWeight: 'bold',
+                    // },
+                    // headerLargeStyle : {
+                    //     headerLargeTitle: true
+                    // }
                 }}
             />
             <Stack.Screen 
                 name = "Favorites" component={Favorites} 
                 options={{
                     title: 'Favoritos',
-                    headerLargeStyle : {
-                        headerLargeTitle: true
-                    }
+
+                }}
+                screenOptions={{
+                    // headerStyle: {
+                    //   backgroundColor: '#f4511e',
+                    // },
+                    // headerTintColor: '#fff',
+                    // headerTitleStyle: {
+                    //   fontWeight: 'bold',
+                    // },
+                    // headerLargeStyle : {
+                    //     headerLargeTitle: true
+                    // }
                 }}
             />
         </Stack.Navigator>
